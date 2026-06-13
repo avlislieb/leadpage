@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import heroImg from "@/assets/hero-jungle.jpg";
 import watchImg from "@/assets/product-watch.jpg";
@@ -221,14 +221,12 @@ function Index() {
             Aprenda. Aplique. Venda. <span className="text-gold">Escale seu império digital.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-3 pt-3">
-            <a
-              href={COMMUNITY_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/cadastro"
               className="px-7 py-4 bg-gold text-onyx font-bold rounded-sm uppercase tracking-wider text-sm shadow-[0_0_30px_rgba(212,175,55,0.35)] hover:shadow-[0_0_45px_rgba(212,175,55,0.55)] transition text-center"
             >
               Entrar para a Comunidade
-            </a>
+            </Link>
             <a
               href="#catalogo"
               className="px-7 py-4 border border-white/20 text-white font-bold rounded-sm uppercase tracking-wider text-sm backdrop-blur-md hover:bg-white/5 transition text-center"
@@ -473,14 +471,12 @@ function Index() {
               Acesso direto à mentoria, suporte ativo e uma rede de vendedores que
               compartilham resultados todos os dias.
             </p>
-            <a
-              href={COMMUNITY_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/cadastro"
               className="inline-block px-7 py-4 bg-gold text-onyx font-bold rounded-sm uppercase tracking-wider text-sm shadow-[0_0_30px_rgba(212,175,55,0.35)] hover:shadow-[0_0_45px_rgba(212,175,55,0.55)] transition"
             >
               Entrar para a Comunidade
-            </a>
+            </Link>
           </div>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
@@ -595,14 +591,12 @@ function Index() {
             escalar suas vendas.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center pt-3">
-            <a
-              href={COMMUNITY_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/cadastro"
               className="px-8 py-4 bg-gold text-onyx font-bold rounded-sm uppercase tracking-wider text-sm shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:shadow-[0_0_50px_rgba(212,175,55,0.6)] transition"
             >
               Entrar para a Comunidade
-            </a>
+            </Link>
             <a
               href="#catalogo"
               className="px-8 py-4 border border-white/20 text-white font-bold rounded-sm uppercase tracking-wider text-sm hover:bg-white/5 transition"
