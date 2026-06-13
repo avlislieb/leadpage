@@ -10,7 +10,7 @@ export const submitLead = createServerFn({ method: "POST" })
     }),
   )
   .handler(async ({ data }) => {
-    const url = import.meta.env.LEAD_API_URL;
+    const url = import.meta.env.LEAD_API_URL ?? process.env.LEAD_API_URL;
     if (!url) throw new Error("URL da API não configurada.");
 
     let res: Response;
